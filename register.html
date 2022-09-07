@@ -16,7 +16,7 @@
     <!-- Mystyle CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
 
-    <title>Login - Onlineshop</title>
+    <title>Register - Onlineshop</title>
 </head>
 
 <body>
@@ -75,13 +75,18 @@
             <div class="col-md-8 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        Login
+                        Register
                     </div>
                     <div class="card-body">
                         <form action="">
                             <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" required autofocus>
+                                <small class="form-text text-danger">Name Required</small>
+                            </div>
+                            <div class="form-group">
                                 <label for="">Email</label>
-                                <input type="email" class="form-control" required autofocus>
+                                <input type="email" class="form-control" required>
                                 <small class="form-text text-danger">Email Required</small>
                             </div>
                             <div class="form-group">
@@ -89,7 +94,12 @@
                                 <input type="password" class="form-control">
                                 <small class="form-text text-danger">Password Required</small>
                             </div>
-                            <button type="submit" class="btn btn-dark">Login</button>
+                            <div class="form-group">
+                                <label for="">Password Confirm</label>
+                                <input type="password" class="form-control">
+                                <small class="form-text text-danger">Password Must Matched</small>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Register</button>
                         </form>
                     </div>
                 </div>
