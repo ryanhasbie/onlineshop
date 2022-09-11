@@ -16,7 +16,7 @@
     <!-- Mystyle CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
 
-    <title>Admin Users - Onlineshop</title>
+    <title>Admin Category - Onlineshop</title>
 </head>
 
 <body>
@@ -75,8 +75,8 @@
             <div class="col-md-10 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <span>Users</span>
-                        <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">Added</a>
+                        <span>Category</span>
+                        <a href="/admin-category-form.html" class="btn btn-sm btn-secondary">Added</a>
 
                         <div class="float-right">
                             <form action="">
@@ -100,25 +100,34 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">User</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Slug</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
+                                    <td>Computers</td>
+                                    <td>computers</td>
                                     <td>
-                                        <p>
-                                            <img src="https://placehold.co/70x70" alt="">
-                                            Admin
-                                        </p>
+                                        <form action="">
+                                            <a href="">
+                                                <button class="btn btn-sm">
+                                                    <i class="fas fa-edit text-info"></i>
+                                                </button>
+                                            </a>
+                                            <button class="btn btn-sm" type="submit"
+                                                onclick="return confirm('Are You Sure?')">
+                                                <i class="fas fa-trash text-danger"></i>
+                                            </button>
+                                        </form>
                                     </td>
-                                    <td>admin@mail.com</td>
-                                    <td>Admin</td>
-                                    <td>Aktif</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Hardisk Eksternal</td>
+                                    <td>hardisk eksternal</td>
                                     <td>
                                         <form action="">
                                             <a href="">
